@@ -17,5 +17,8 @@ public class Team {
 
     public void display(){
         System.out.println("Team: " + teamName);
+        for(int i = 0; i < teamList.size(); i++){
+            System.out.println(teamList.get(i).getName());
+        }
     }
 }

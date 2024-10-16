@@ -12,7 +12,9 @@ public class Players {
         this.playerName = playerName;
      }
 
-     
+     public String getName(){
+      return playerName;
+     }
 
 }
 
