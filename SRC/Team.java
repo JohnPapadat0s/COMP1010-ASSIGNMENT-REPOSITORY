@@ -1,6 +1,11 @@
 package SRC;
 
 public class Team {
-    ArrayList<Players>TeamList = new ArrayList<>();
+    ArrayList<Players>TeamList1 = new ArrayList<>();
+
+    Boolean hasBeenChosen = false;
+    Boolean hasWon = false;
+
+
 
 }
