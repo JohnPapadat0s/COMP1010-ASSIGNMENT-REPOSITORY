@@ -11,7 +11,6 @@ public class Players {
      public Players(int rating, String playerName){
         this.rating = rating;
         this.playerName = playerName;
-
      }
 
 }
