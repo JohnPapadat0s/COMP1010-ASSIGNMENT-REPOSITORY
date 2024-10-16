@@ -8,9 +8,4 @@ public class Client {
         Team T2 = new Team("Macquarie", "Macquarie Uni");
         Team T3 = new Team("Macquarie", "Macquarie Uni");
         Team T4 = new Team("Macquarie", "Macquarie Uni");
-        Team T5 = new Team("Macquarie", "Macquarie Uni");
-        Team T6 = new Team("Macquarie", "Macquarie Uni");
-        Team T7 = new Team("Macquarie", "Macquarie Uni");
-        Team T8 = new Team("Macquarie", "Macquarie Uni");
-    }
 }
