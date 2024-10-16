@@ -62,6 +62,8 @@ public class Client {
         //Team4 Creation
         String randomTeamName4 = getRandomTeamName();
         Team team4 = new Team(team4Players, getRandomTeamName());
+
+        team1.display();
     }
 
     public static String getRandomPlayerName() {

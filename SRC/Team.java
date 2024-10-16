@@ -14,4 +14,8 @@ public class Team {
         this.teamList = playerList;
         this.teamName = teamName;
     }
+
+    public void display(){
+        System.out.println("Team: " + teamName);
+    }
 }
