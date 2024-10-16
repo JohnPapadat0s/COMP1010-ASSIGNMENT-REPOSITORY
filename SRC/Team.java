@@ -1,9 +1,12 @@
 package SRC;
 
-import java.util.ArrayList;
+import java.util.ArrayList; 
+
 
 public class Team {
-    
+    Boolean hasBeenChosen = false;
+    Boolean hasWon = false;
+
     ArrayList<Players>teamList = new ArrayList<Players>();
     String teamName;
 
