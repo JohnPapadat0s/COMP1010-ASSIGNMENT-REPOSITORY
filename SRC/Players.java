@@ -12,6 +12,7 @@ public class Players {
         this.playerName = playerName;
      }
 
+     //This is a function called in Team, i was testing to see if the names were randomised, just returns a players name
      public String getName(){
       return playerName;
      }

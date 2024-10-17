@@ -15,9 +15,13 @@ public class Team {
         this.teamName = teamName;
     }
 
+    //This is called in client i was testing the teams random name thigo
     public void display(){
+        //Just outputs the team name 
         System.out.println("Team: " + teamName);
+        //Runs through the size of the teamList (All the players names that are also randomised)
         for(int i = 0; i < teamList.size(); i++){
+            //Outputs the individual players names from the list
             System.out.println(teamList.get(i).getName());
         }
     }
