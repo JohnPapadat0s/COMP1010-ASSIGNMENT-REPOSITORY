@@ -17,6 +17,11 @@ public class Players {
       return playerName;
      }
 
+     //This is a function called in Team, i was testing to see if the skills were randomised, just returns a players skill
+     public int getSkill(){
+      return playerSkill;
+     }
+
 }
 
 

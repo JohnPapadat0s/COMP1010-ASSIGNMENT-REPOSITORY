@@ -18,9 +18,9 @@ public class Client {
             //Everytime the for loop is run, String randomPlayerName1 is retrieving a new random name from getRandomPlayerName
             String randomPlayerName1 = getRandomPlayerName();
             //Everytime the for loop is run, a new player is added, with a skill and a random name that was got earilier
-
+            int playerSkill1 = randomPlayerSkill();
             //THE RANDOM PLAYER SKILL HAS NOT BEEN MADE YET
-            team1Players.add(new Players(1, randomPlayerName1));
+            team1Players.add(new Players(playerSkill1, randomPlayerName1));
         }
 
         //THESE 3 ARE THE SAME AS THE FIRST SO IMMA NOT WRITE ALL THAT COMMENTS AGAIN 3 TIMES
@@ -29,21 +29,24 @@ public class Client {
             ArrayList<Players> team2Players = new ArrayList<>();
             for (int j = 0; j < 11; j++) {
                 String randomPlayerName2 = getRandomPlayerName();
-                team2Players.add(new Players(1, randomPlayerName2));
+                int playerSkill2 = randomPlayerSkill();
+                team2Players.add(new Players(playerSkill2, randomPlayerName2));
             }
 
         //Player list3 Creation
             ArrayList<Players> team3Players = new ArrayList<>();
             for (int k = 0; k < 11; k++) {
                 String randomPlayerName3 = getRandomPlayerName();
-                team3Players.add(new Players(1, randomPlayerName3));
+                int playerSkill3 = randomPlayerSkill();
+                team3Players.add(new Players(playerSkill3, randomPlayerName3));
             }
 
         //Player list4 Creation
             ArrayList<Players> team4Players = new ArrayList<>();
             for (int l = 0; l < 11; l++) {
                 String randomPlayerName4 = getRandomPlayerName();
-                team4Players.add(new Players(1, randomPlayerName4));
+                int playerSkill4 = randomPlayerSkill();
+                team4Players.add(new Players(playerSkill4, randomPlayerName4));
             }
 
     //Creating the team objects
@@ -114,6 +117,12 @@ public class Client {
         //and it chooses a random number between 1 and the size of the Teamnames array, random.nextInt(Teamnames.length)
         //Returning the string which corresponds to the number in the array
         return Teamnames[random.nextInt(Teamnames.length)];
+    }
+
+    //Makes the random player skill number that is attached to each player
+    public static int randomPlayerSkill(){
+        Random random = new Random();
+        return random.nextInt(100);
     }
 }
         
