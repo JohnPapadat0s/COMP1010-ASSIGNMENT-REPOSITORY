@@ -71,24 +71,22 @@ public class Client {
             Team team4 = new Team(team4Players, randomTeamName4);
 
         //Just a test to see if the team and player names were outputted randomly
-        team1.display();
+        DisplayStructure.display(team1);
     }
 
 //Code to get the random player name that is called everytime the for loop is run when declaring each new player
     public static String getRandomPlayerName() {
         //This is the list of all possible names that can be chosen from
         String[] Playernames = {
-            "John", "Alberto", "Harry", "Sid", "James", "Michael", "David", "Chris", "Daniel", "Ryan", "Nick", "Andrew", "Jason", "Alex", "Matthew", 
-            "Ethan", "Samuel", "Oliver", "Ben", "Liam", "Kevin", "Scott", "Adam", "Peter", "Mark", "Eric", "Lucas", "Joseph", "Anto", "Jacob", "Thomas", 
-            "Jaiden", "Alessio", "Nathaniel", "Isaac", "Caleb", "Simon", "Victor", "Owen", "Julian", "Mason", "Gavin", "Charlie", "Henry", "Zachary", 
-            "Dylan", "Aiden", "Max", "Tristan", "Sebastian", "Felix", "Jett", "Leo", "Nathan", "Cole", "Jason", "Isaac", "Grant", "Tyler", "Marcus", 
-            "Jude", "Evan", "Blake", "Ashton", "Chase", "Wyatt", "Carter", "Riley", "Harrison", "Finn", "Miles", "Jordan", "Everett", "Kyle", "Josiah", 
-            "Malcolm", "Reese", "Soren", "Nolan", "Tyson", "Archer", "Rowan", "Silas", "Quinn", "Angelo", "Tristan", "Bruno", "Kingston", "Mason", 
-            "Weston", "Ryder", "Ashton", "Orion", "Zachary", "Dean", "Jorge", "Cole", "Marco", "Victor", "Damian", "Adam", "Jaxon", "Luca", "Eli", "Sawyer", 
-            "Maxwell", "Gideon", "Ezra", "Zane", "Malachi", "Hugo", "Landon", "Cash", "Kaden", "Ronan", "Dante", "Apollo", "Cyrus", "Tobias", "Remy", "Dorian", 
-            "Jasper", "Nico", "Finnian", "Theo", "Sullivan", "Bodhi", "Kian", "Bennett", "Tate", "Riley", "Silas", "August", "Emilio", "Wesley", "Cohen", 
-            "Jettson", "Kairo", "Ryder", "Fletcher", "Reed", "Zayden", "Hendrix", "Zeke", "Kendrick", "Jovany", "Brayden", "Talon", "Dawson"
+            "John Doe", "Alberto Rossi", "Harry Smith", "Sid Brown", "James Taylor", "Michael Johnson", "David Williams", "Chris Davis", "Daniel Martinez", 
+            "Ryan Wilson", "Nick Moore", "Andrew Anderson", "Jason Thomas", "Alex Jackson", "Matthew White", "Ethan Harris", "Samuel Lewis", "Oliver Clark", 
+            "Ben Walker", "Liam Hall", "Kevin Young", "Scott King", "Adam Wright", "Peter Green", "Mark Baker", "Eric Nelson", "Lucas Hill", "Joseph Scott", 
+            "Anto Adams", "Jacob Baker", "Thomas Murphy", "Jaiden Brown", "Alessio Russo", "Nathaniel Reed", "Isaac Ward", "Caleb Morgan", "Simon Bailey", 
+            "Victor Diaz", "Owen Hughes", "Julian Peterson", "Mason Nguyen", "Gavin Price", "Charlie Perry", "Henry Butler", "Zachary Bennett", "Dylan Ross", 
+            "Aiden Collins", "Max Mitchell", "Tristan Foster", "Sebastian Hall", "Felix James", "Jett Carter", "Leo Reed", "Nathan Clark", "Cole Rogers", 
+            "Jason Parker", "Isaac Anderson", "Grant Anderson", "Tyler Palmer", "Marcus Martinez", "Jude Edwards", "Evan Brooks", "Blake Sanders", "Ashton Torres"  
         };
+
          //This is just something that is nescesary, Google said idk
         Random random = new Random();
         //Here the players name is returned, it returns a random string from the Playernames array return Playernames[], 
