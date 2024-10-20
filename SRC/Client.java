@@ -71,7 +71,8 @@ public class Client {
             Team team4 = new Team(team4Players, randomTeamName4);
 
         //Just a test to see if the team and player names were outputted randomly
-        DisplayStructure.displayAll(team1);
+        //DisplayStructure.displayAll(team1);
+        DisplayStructure.startGameDisplay(team1, team2, team3, team4);
     }
 
 //Code to get the random player name that is called everytime the for loop is run when declaring each new player
