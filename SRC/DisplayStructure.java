@@ -32,7 +32,7 @@ public class DisplayStructure {
         System.out.println(" ");
         System.out.println("The 4 teams playing in the Football tournament today are:");
         System.out.println(" ");
-        System.out.println(team1.teamName + "  -  " + team2.teamName + "  -  " + team3.teamName + "  -  " + team4.teamName);
+        System.out.println("   " + team1.teamName + "  vs  " + team2.teamName + "   &   " + team3.teamName + "  vs  " + team4.teamName);
         System.out.println(" ");
         System.out.println("Round 1 winners:");
         System.out.println(" ");
@@ -54,11 +54,12 @@ public class DisplayStructure {
 
         if (teamSkillAVG1 >= teamSkillAVG2) {
             team1.hasWon = true;
-            System.out.println("Winner: " + team1.teamName);
+            System.out.println("   Winner: " + team1.teamName);
+            System.out.println(" ");
             return team1;
         } else {
             team2.hasWon = true;
-            System.out.println("Winner: " + team2.teamName);
+            System.out.println("   Winner: " + team2.teamName);
         }
             return team2;
     }
