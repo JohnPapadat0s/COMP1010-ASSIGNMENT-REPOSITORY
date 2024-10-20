@@ -10,7 +10,7 @@ public class Team {
     ArrayList<Players>teamList = new ArrayList<Players>();
     String teamName;
 
-    public Team(ArrayList<Players> playerList, String teamName){
+    public Team(ArrayList<Players> playerList, String teamName, Boolean hasWon){
         this.teamList = playerList;
         this.teamName = teamName;
     }

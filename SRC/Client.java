@@ -54,21 +54,21 @@ public class Client {
         //Team1 Creation, setting the String to the random name team that is retrieved from the getRandomTeamName function 
         String randomTeamName1 = getRandomTeamName();
         // Creating a new team, with the ArrayList<Players> for team 1 and then using the randomTeamName1 String for the team name
-        Team team1 = new Team(team1Players, randomTeamName1);
+        Team team1 = new Team(team1Players, randomTeamName1, false);
 
         //THESE 3 ARE THE SAME AS THE FIRST SO IMMA NOT WRITE ALL THAT COMMENTS AGAIN 3 TIMES
         
         //Team2 Creation
             String randomTeamName2 = getRandomTeamName();
-            Team team2 = new Team(team2Players, randomTeamName2);
+            Team team2 = new Team(team2Players, randomTeamName2, false);
 
         //Team3 Creation
             String randomTeamName3 = getRandomTeamName();
-            Team team3 = new Team(team3Players, randomTeamName3);
+            Team team3 = new Team(team3Players, randomTeamName3, false);
 
         //Team4 Creation
             String randomTeamName4 = getRandomTeamName();
-            Team team4 = new Team(team4Players, randomTeamName4);
+            Team team4 = new Team(team4Players, randomTeamName4, false);
 
         //Just a test to see if the team and player names were outputted randomly
         //DisplayStructure.displayAll(team1);
