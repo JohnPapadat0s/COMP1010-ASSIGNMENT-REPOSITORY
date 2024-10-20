@@ -41,7 +41,7 @@ public class DisplayStructure {
         Team winner1 = determineWinner(team1, team2);
         // Team 3 vs Team 4
         Team winner2 = determineWinner(team3, team4);
-        System.out.println(" ");
+        
 
         determineFinalWinner(winner1, winner2);
         System.out.println(" ");
