@@ -23,26 +23,33 @@ public class DisplayStructure {
             System.out.println("Player Rating: " + player.getSkill() + ": " + player.getName());
             System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
         }
+        System.out.println("___________________________________________________________________________________________");
         System.out.println(" ");
     }
 
     // This method initiates the game display and determines the winners.
     public static void startGameDisplay(Team team1, Team team2, Team team3, Team team4) {
-        System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
+        System.out.println("___________________________________________________________________________________________");
         System.out.println(" ");
         System.out.println("The 4 teams playing in the Football tournament today are:");
         System.out.println(" ");
-        System.out.println("   " + team1.teamName + "  vs  " + team2.teamName + "   &   " + team3.teamName + "  vs  " + team4.teamName);
+        System.out.println("   " + team1.teamName + "  -  " + team2.teamName + "  -  " + team3.teamName + "  -  " + team4.teamName);
         System.out.println(" ");
-        System.out.println("Round 1 winners:");
+        System.out.println("Round 1: ");
         System.out.println(" ");
+        System.out.println("   " + team1.teamName + "  vs  " + team2.teamName + "  &  " + team3.teamName + "  vs  " + team4.teamName);
+        System.out.println(" ");
+        
 
         // Team 1 vs Team 2
         Team winner1 = determineWinner(team1, team2);
         // Team 3 vs Team 4
         Team winner2 = determineWinner(team3, team4);
         
-
+        System.out.println("Round 2: ");
+        System.out.println(" ");
+        System.out.println("   " + winner1.teamName + "  vs  " + winner2.teamName);
+        System.out.println(" ");
         determineFinalWinner(winner1, winner2);
         System.out.println(" ");
     }
@@ -54,12 +61,14 @@ public class DisplayStructure {
 
         if (teamSkillAVG1 >= teamSkillAVG2) {
             team1.hasWon = true;
-            System.out.println("   Winner: " + team1.teamName);
+            System.out.println("      Round 1 Winner: " + team1.teamName);
+
             System.out.println(" ");
             return team1;
         } else {
             team2.hasWon = true;
-            System.out.println("   Winner: " + team2.teamName);
+            System.out.println("      Round 1 Winner: " + team2.teamName);
+            System.out.println(" ");
         }
             return team2;
     }
@@ -70,12 +79,12 @@ public class DisplayStructure {
 
         if (teamSkillAVG1 >= teamSkillAVG2) {
             team1.hasWon = true;
-            System.out.println("The Final Winner: " + team1.teamName);
+            System.out.println("      Round 2 Winner: " + team1.teamName);
             System.out.println(" ");
             displayAll(team1);
         } else {
             team2.hasWon = true;
-            System.out.println("The Final Winner: " + team2.teamName);
+            System.out.println("      Round 2 Winner: " + team2.teamName);
             System.out.println(" ");
             displayAll(team2);
         }
@@ -89,4 +98,5 @@ public class DisplayStructure {
         }
         return totalSkill / teamList.size(); // Ensure no division by zero
     }
+
 }
