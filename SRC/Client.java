@@ -79,7 +79,7 @@ public class Client {
     public static String getRandomPlayerName() {
         //This is the list of all possible names that can be chosen from
         String[] Playernames = {
-            "John Doe", "Alberto Rossi", "Harry Smith", "Sid Brown", "James Taylor", "Michael Johnson", "David Williams", "Chris Davis", "Daniel Martinez", 
+            "Jon Doe", "Alberto Rossi", "Harry Smith", "Sid Brown", "James Taylor", "Michael Johnson", "David Williams", "Chris Davis", "Daniel Martinez", 
             "Ryan Wilson", "Nick Moore", "Andrew Anderson", "Jason Thomas", "Alex Jackson", "Matthew White", "Ethan Harris", "Samuel Lewis", "Oliver Clark", 
             "Ben Walker", "Liam Hall", "Kevin Young", "Scott King", "Adam Wright", "Peter Green", "Mark Baker", "Eric Nelson", "Lucas Hill", "Joseph Scott", 
             "Anto Adams", "Jacob Baker", "Thomas Murphy", "Jaiden Brown", "Alessio Russo", "Nathaniel Reed", "Isaac Ward", "Caleb Morgan", "Simon Bailey", 
@@ -88,7 +88,7 @@ public class Client {
             "Jason Parker", "Isaac Anderson", "Grant Anderson", "Tyler Palmer", "Marcus Martinez", "Jude Edwards", "Evan Brooks", "Blake Sanders", "Ashton Torres"  
         };
 
-         //This is just something that is nescesary, Google said idk
+         //This is just something that is necessary, for the program to work
         Random random = new Random();
         //Here the players name is returned, it returns a random string from the Playernames array return Playernames[], 
         //and it chooses a random number between 1 and the size of the Playernames array, random.nextInt(Playernames.length)
@@ -110,7 +110,7 @@ public class Client {
             "Melbourne Institute of Technology", "Open Universities Australia", "TAFE Queensland", "Curtin College", "Swinburne University of Technology", 
             "Australian Institute of Music", "Australian College of Applied Psychology", "Box Hill Institute", "Monash University"
         };
-        //This is just something that is nescesary, Google said idk
+        //Necessary bit of code for the program to rum
         Random random = new Random();
         //Here the team name is returned, it returns a random string from the Teamnames array return Teamnames[], 
         //and it chooses a random number between 1 and the size of the Teamnames array, random.nextInt(Teamnames.length)
