@@ -1,12 +1,84 @@
-package SRC;
-
-import static org.junit.Assert.*;
-
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import java.util.ArrayList;
 
 public class Test {
+
     @Test
-    public void testContains(){
-        
+    public void test1() {
+        runTeamTest(4);
     }
+
+    @Test
+    public void test2() {
+        runTeamTest(8);
+    }
+
+    @Test
+    public void test3() {
+        runTeamTest(0);
+    }
+
+    @Test
+    public void test4() {
+        runTeamTest(16);
+    }
+
+    @Test
+    public void test5() {
+        runTeamTest(3);
+    }
+
+    @Test
+    public void test6() {
+        runTeamTest(24);
+    }
+
+    @Test
+    public void test7() {
+        runTeamTest(28);
+    }
+
+    @Test
+    public void test8() {
+        runTeamTest(32);
+    }
+
+    @Test
+    public void test9() {
+        runTeamTest(36);
+    }
+
+    @Test
+    public void test10() {
+        runTeamTest(39);
+    }
+
+    private void runTeamTest(int numberOfTeams) {
+        // Using assertFalse to check if numberOfTeams is not divisible by 4
+        assertFalse(numberOfTeams % 4 != 0, "Number of teams must be divisible by 4. Given: " + numberOfTeams);
+
+        ArrayList<Team> teams = new ArrayList<>();
+
+        for (int i = 0; i < numberOfTeams; i++) {
+            ArrayList<Players> teamPlayers = createPlayers(11);
+            String teamName = "Team " + (i + 1);
+            teams.add(new Team(teamPlayers, teamName, false));
+        }
+
+        assertEquals(numberOfTeams, teams.size());
+    }
+
+    // Helper method to create players
+    private ArrayList<Players> createPlayers(int count) {
+        ArrayList<Players> players = new ArrayList<>();
+        for (int i = 0; i < count; i++) {
+            String randomName = Client.getRandomPlayerName();
+            int skill = Client.randomPlayerSkill();
+            players.add(new Players(skill, randomName));
+        }
+        return players;
+    }
+
+    // Add more tests as needed for edge cases, etc.
 }
