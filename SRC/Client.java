@@ -19,7 +19,7 @@ public class Client {
             String randomPlayerName1 = getRandomPlayerName();
             //Everytime the for loop is run, a new player is added, with a skill and a random name that was got earilier
             int playerSkill1 = randomPlayerSkill();
-            //THE RANDOM PLAYER SKILL HAS NOT BEEN MADE YET
+            //THE RANDOM PLAYER S  KILL HAS NOT BEEN MADE YET
             team1Players.add(new Players(playerSkill1, randomPlayerName1));
         }
 
