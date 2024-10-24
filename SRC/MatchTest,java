@@ -1,5 +1,5 @@
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+mport org.junit.jupiter.api.Test; // JUnit 5
+import static org.junit.jupiter.api.Assertions.*; // Assertions
 import java.util.ArrayList;
 
 public class MatchTest {
@@ -7,6 +7,7 @@ public class MatchTest {
     @Test
     public void testGetRandomTeamName() {
         String teamName = Client.getRandomTeamName();
-        assertTrue(teamNameName.length() > 0);
+        assertNotNull(teamName); // Ensure the name is not null
+        assertTrue(teamName.length() > 0); // Ensure the name length is greater than 0
     }
 }
