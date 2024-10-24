@@ -1,0 +1,12 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import java.util.ArrayList;
+
+public class MatchTest {
+
+    @Test
+    public void testGetRandomTeamName() {
+        String teamName = Client.getRandomTeamName();
+        assertTrue(teamNameName.length() > 0);
+    }
+}
