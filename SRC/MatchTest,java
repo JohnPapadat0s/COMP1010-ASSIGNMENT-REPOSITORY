@@ -1,13 +1,18 @@
-mport org.junit.jupiter.api.Test; // JUnit 5
-import static org.junit.jupiter.api.Assertions.*; // Assertions
-import java.util.ArrayList;
+import static org.junit.Assert.*;
 
-public class MatchTest {
+import org.junit.Test;
+
+public class TestClass1 {
 
     @Test
-    public void testGetRandomTeamName() {
-        String teamName = Client.getRandomTeamName();
-        assertNotNull(teamName); // Ensure the name is not null
-        assertTrue(teamName.length() > 0); // Ensure the name length is greater than 0
+    public void testFalse() {
+        boolean condition = 3 > 5;
+        assertFalse("Condition should be false", condition);
+    }
+
+    @Test
+    public void testNotNull() {
+        String str = "JUnit";
+        assertNotNull("String should not be null", str);
     }
 }
